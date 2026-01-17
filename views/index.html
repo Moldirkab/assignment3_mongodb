@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog App</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="blogs" class="blogs-column"></div>
+        <div class="form-column">
+            <div class="card">
+                <h1>Add Blog</h1>
+                <form id="blogForm">
+                    <input type="text" id="title" placeholder="Title" required />
+                    <textarea id="body" placeholder="Body" rows="5" required></textarea>
+                    <input type="text" id="author" placeholder="Author" />
+                    <button type="submit">Submit</button>
+                    <div id="errorMsg" class="error"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="/app.js"></script>
+</body>
+</html>
